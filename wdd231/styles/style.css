@@ -1,0 +1,104 @@
+.profile-section {
+    display: flex;
+}
+
+.profile-pic {
+    padding: 10px;
+}
+
+header {
+    background: linear-gradient(to right, #325b9c, #d5edf8);
+
+}
+
+.profile-name {
+    align-content: center;
+}
+
+nav a {
+    text-decoration: none;
+    font-size: large;
+    color: black;
+    font-weight: 700;
+    font-style: normal;
+}
+
+nav a:hover {
+    color: #ffffff;
+    background-color: gray;
+    padding: 1px;
+}
+
+
+.course-work h3{
+    background: linear-gradient(to right, #325b9c, #d5edf8);
+    margin: 10px;
+    padding: 10px;
+    text-align: center;
+    border-radius: 10px 10px 0 0;
+}
+
+.home-country h3{
+    background: linear-gradient(to right, #325b9c, #d5edf8);
+    margin: 10px;
+    padding: 10px;
+    text-align: center;
+    border-radius: 10px 10px 0 0;
+}
+
+.home-country{
+    text-align: center;
+}
+
+.certificate-section h3 {
+    background: linear-gradient(to right, #325b9c, #d5edf8);
+    margin: 10px;
+    padding: 10px;
+    text-align: center;
+    border-radius: 10px 10px 0 0;
+}
+
+
+.filter-buttons{
+    display: flex;
+    margin: 10px;
+}
+.filter-buttons button{
+    background-color: black;
+    color: white;
+    justify-content: space-around;
+    width: 100%;
+    border-radius: 5px;
+    margin: 1px;
+}
+
+
+
+
+/* Mobile view */
+@media (max-width: 600px) {
+    .menu-icon {
+        display: block;
+        position: absolute;
+        font-size: 2rem;
+        font-weight: bolder;
+        cursor: pointer;
+        color: rgb(0, 0, 0);
+        top: 1rem;
+        right: 1rem;
+    }
+
+    #menu ul {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        padding: 0;
+        background: linear-gradient(to right, rgb(165, 91, 42), #d5edf8);
+        text-align: center;
+        
+    }
+
+    #menu.open ul {
+        display: flex;
+    }
+}

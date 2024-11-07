@@ -1,46 +1,127 @@
+:root {
+
+    /* COLORS */
+    --first-color: linear-gradient(to right, #203a63, #31525f);
+
+    /* FONTS */
+    --first-font: "Roboto", sans-serif;
+}
+
+
+/*---------- PROFILE SECTION--------------------*/
 .profile-section {
     display: flex;
+    justify-content: center;
 }
 
 .profile-pic {
-    padding: 10px;
+    margin: 10px;
+    padding: 0;
+    box-shadow: 0px 4px 8px;
 }
 
 header {
-    background: linear-gradient(to right, #325b9c, #d5edf8);
-
+    background: var(--first-color)
 }
 
 .profile-name {
     align-content: center;
+    font-family: var(--first-font);
+    font-weight: 500;
+    font-style: normal;
+    color: white;
 }
 
-nav a {
+
+/* ---------- MENU SECTION --------------- */
+.menu-list {
+    background-color: black;
+    padding: 10px;
+}
+
+.menu-list li{
+    font-family: var(--first-font);
+}
+
+.menu-list a{
+    color: white;
     text-decoration: none;
     font-size: large;
-    color: black;
-    font-weight: 700;
+    font-weight: 300;
     font-style: normal;
 }
 
-nav a:hover {
-    color: #ffffff;
-    background-color: gray;
+
+.menu-list a:hover {
+    color: gold;
     padding: 1px;
 }
 
+.menu-item.active {
+    color: gold; /* Active color */
+    font-weight: bold; /* Optional */
+    border-bottom: 2px solid #3498db; /* Optional wayfinder style */
+}
+
+
+
+/* ---------- COURSE SECTION ---------------- */
+.course-work-section {
+    box-shadow: 0 0 8px;
+    border-radius: 10px 10px 0 0;
+    margin: 10px;
+}
 
 .course-work h3{
-    background: linear-gradient(to right, #325b9c, #d5edf8);
-    margin: 10px;
+    font-family: var(--first-font);
+    color: white;
+    font-weight: 100;
+    margin: 0;
     padding: 10px;
     text-align: center;
     border-radius: 10px 10px 0 0;
 }
 
-.home-country h3{
-    background: linear-gradient(to right, #325b9c, #d5edf8);
+.course-list p{
+    font-family: var(--first-font);
+    background-color: rgb(120, 56, 10);
+    color: white;
+    text-align: center;
+    padding: 8px;
+    border-radius: 5px;
+    border: rgba(0, 0, 0, 0.239) solid 1px;
+    margin: 8px;
+}
+
+
+.course-item {
+    padding: 10px;
+    margin: 5px 10px;
+    background: #ffffff;
+    border: 1px solid #afafaf;
+    border-radius: 5px;
+    text-align: center;
+    font-family: var(--first-font);
+}
+
+.course-item.completed {
+    background: #d0ffd0;
+    border: 1px solid #5cb85c;
+}
+/* ------------ HOME SECTION ----------------- */
+
+.home-country-section {
     margin: 10px;
+    box-shadow: 0 0 8px;
+    border-radius: 10px 10px 0 0;
+}
+
+.home-country h3{
+    background: var(--first-color);
+    font-family: var(--first-font);
+    color: white;
+    font-weight: 100;
+    margin: 0;
     padding: 10px;
     text-align: center;
     border-radius: 10px 10px 0 0;
@@ -50,55 +131,82 @@ nav a:hover {
     text-align: center;
 }
 
-.certificate-section h3 {
-    background: linear-gradient(to right, #325b9c, #d5edf8);
+.home-country img{
+    width: 70%;
+    height: auto;
+    margin-top: 8px;
+}
+
+.home-country-section p {
+    color: rgb(0, 0, 0);
+    text-align: center;
+}
+
+
+/* -------------- CERTIFICATE SECTION ----------------------- */
+.certificate-section {
     margin: 10px;
+    box-shadow: 0 0 8px;
+    border-radius: 10px 10px 0 0;
+}
+
+.certificate-section h3 {
+    font-family: var(--first-font);
+    background: var(--first-color);
+    color: white;
+    font-weight: 100;
+    margin: 0;
     padding: 10px;
     text-align: center;
     border-radius: 10px 10px 0 0;
 }
 
 
+
+
+/* ----------------- FILTER SECTION ----------------- */
 .filter-buttons{
     display: flex;
     margin: 10px;
+    justify-content: center;
 }
 .filter-buttons button{
     background-color: black;
     color: white;
     justify-content: space-around;
-    width: 100%;
+    width: 150px;
     border-radius: 5px;
     margin: 1px;
 }
 
-
-
-
-/* Mobile view */
-@media (max-width: 600px) {
-    .menu-icon {
-        display: block;
-        position: absolute;
-        font-size: 2rem;
-        font-weight: bolder;
-        cursor: pointer;
-        color: rgb(0, 0, 0);
-        top: 1rem;
-        right: 1rem;
-    }
-
-    #menu ul {
-        display: none;
-        flex-direction: column;
-        width: 100%;
-        padding: 0;
-        background: linear-gradient(to right, rgb(165, 91, 42), #d5edf8);
-        text-align: center;
-        
-    }
-
-    #menu.open ul {
-        display: flex;
-    }
+.filter-buttons button:hover {
+    color: gold;
 }
+
+hr {
+    margin: 10px;
+}
+
+/* ------------------- FOOTER ------------------- */
+footer{
+    background: var(--first-color);
+    font-family: var(--first-font);
+    text-align: center;
+    height: 100%;
+    color: white;
+
+}
+
+footer img {
+    height: 40px;
+    margin-left: 10px;
+}
+
+.footer-flex {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 10px;
+}
+
+

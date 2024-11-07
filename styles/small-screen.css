@@ -1,0 +1,34 @@
+/* Mobile view */
+@media (max-width: 600px) {
+    .menu-icon {
+        display: block;
+        position: absolute;
+        font-size: 2rem;
+        font-weight: bolder;
+        cursor: pointer;
+        color: rgb(255, 255, 255);
+        top: 1rem;
+        right: 1rem;
+    }
+
+    #menu ul {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        padding: 0;
+        text-align: center;
+        
+    }
+
+    #menu.open ul {
+        display: flex;
+    }
+
+    footer {
+        height: 23vh;
+    }
+
+    .course-work h3{
+        background: var(--first-color);
+    }
+}

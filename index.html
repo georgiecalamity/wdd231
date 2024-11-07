@@ -5,9 +5,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="author" content="Brylle Dann Tabon">
     <meta name="description" content="">
-    <title>Document</title>
+    <title>Home Page</title>
+
+    <!-- css links -->
     <link rel="stylesheet" href="styles/normalize.css">
     <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="styles/small-screen.css">
+    <link rel="stylesheet" href="styles/large-screen.css">
+
+    <!-- fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;400;500;600&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
     
 </head>
 <body>
@@ -19,51 +28,60 @@
     </div>
         <nav id="menu">
             <span class="menu-icon" onclick="toggleMenu()">☰</span>
-            <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">Chamber</a></li>
-                <li><a href="#">Github Profile</a></li>
-                <li><a href="https://www.linkedin.com/in/brylle-dann-tabon-022158256/">LinkedIn</a></li>
+            <ul class="menu-list">
+                <li><a href="#" class="menu-item active">Home</a></li>
+                <li><a href="#" class="menu-item">Chamber</a></li>
+                <li><a href="#" class="menu-item">Github Profile</a></li>
+                <li><a href="https://www.linkedin.com/in/brylle-dann-tabon-022158256/" class="menu-item">LinkedIn</a></li>
             </ul>
         </nav>
     </header>
     <main>
-        <section class="course-work-section">
-            <div class="course-work">
-                <h3>Course Work</h3>
-                <nav>
-                    <ul>
-                        <li></li>
-                        <li></li>
-                        <li></li>
-                    </ul>
-                </nav>
-            </div>
-        </section>
+        <div class="grid-container-1">
+            <section class="course-work-section">
+                <div class="course-work">
+                    <h3>Course Work</h3>
+                    <nav>
+                        <ul>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                        </ul>
+                    </nav>
+                </div>
+            </section>
 
-        <section class="home-country-section">
-            <div class="home-country">
-                <h3>Leyte, Visayas, Philippines</h3>
-                <img src="images/Philippines.webp" alt="" width="250">
-                <figcaption>Palawan Beach</figcaption>
-            </div>
-        </section>
+            <section class="home-country-section">
+                <div class="home-country">
+                    <h3>Leyte, Visayas, Philippines</h3>
+                    <img src="images/Philippines.webp" alt="country image">
+                    <p>Palawan Beach</p>
+                </div>
+            </section>
+        </div>
 
         <section class="certificate-section">
             <div class="certificate">
                 <h3>Web and Computer Programming Certificate</h3>
                 <div class="filter-buttons">
-                    <button>All</button>
-                    <button>CSE</button>
-                    <button>WDD</button>
+                    <button onclick="filterCourses('all')">All</button>
+                    <button onclick="filterCourses('CSE')">CSE</button>
+                    <button onclick="filterCourses('WDD')">WDD</button>
                 </div>
+                <hr>
+                    <div id="course-list"></div>
+
+                    <p id="total-credits"></p>
             </div>
         </section>
         
     </main>
 
     <footer>
-        <p><span id="copyrightYear"></span> 🔥 Brylle Dann Tabon 🔥 Philippines</p>
+        <div class="footer-flex">
+            <p><span id="copyrightYear"></span> 🔥 Brylle Dann Tabon 🔥 Philippines</p>
+            <img src="images/Flag-Philippines.webp" alt="ph-flag">
+        </div>
         <p><span id="lastModified"></span></p>
     </footer>
 

@@ -104,7 +104,7 @@ const courses = [
 ]
 
 
-//-------------------------------------------- filter
+//-------------------------------------------- Render the courses
 
 const totalCreditsDisplay = document.getElementById('total-credits');
 
@@ -130,7 +130,6 @@ function renderCourses(filteredCourses) {
     totalCreditsDisplay.textContent = `Total Credits: ${totalCredits}`;
 }
 
-
 // Function to filter courses based on the selected category
 function filterCourses(category) {
     let filteredCourses;
@@ -141,6 +140,7 @@ function filterCourses(category) {
     }
     renderCourses(filteredCourses);
 }
+
 
 // Initial rendering of all courses
 renderCourses(courses);

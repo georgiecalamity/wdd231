@@ -1,0 +1,66 @@
+[
+    {
+    "name": "Alliedtech Custom Printing Shop",
+    "address": "Alicemar Bldg., Bonifacio St.",
+    "phone": "555-1234",
+    "website": "alliedtech.com",
+    "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQl9RdJdPWrhnby6y4cInKivFWOJES9mRsktA&s",
+    "membership_level": 3,
+    "info": "alliedtech@gmail.com"
+    },
+    {
+    "name": "AC Cellshop Cellphone Repair and Accesories",
+    "address": "Real Street, Corner Aviles Maglasang Bldg Ormoc City",
+    "phone": "555-5678",
+    "website": "accellshop.com",
+    "image": "https://graph.facebook.com/375892645927202/picture/?type=large",
+    "membership_level": 2,
+    "info": "ac_cellshop@gmail.com"
+    },
+    {
+    "name": "Ormoc Printshoppe",
+    "address": "Agua Dulce St. District 27 Ormoc City",
+    "phone": "555-9101",
+    "website": "ormocprintshppe.com",
+    "image": "https://graph.facebook.com/132392733476075/picture/?type=large",
+    "membership_level": 1,
+    "info": "ormocprintshoppe@gmail.com"
+    },
+    {
+    "name": "Link Digital Printing and I.T. Solutions",
+    "address": "Carlos Tan Ormoc City",
+    "phone": "555-9101",
+    "website": "linkdigital.com",
+    "image": "https://graph.facebook.com/1441698339408137/picture/?type=large",
+    "membership_level": 2,
+    "info": "linkdigital22@gmail.com"
+    },
+    {
+    "name": "Edullantes Professional Lights & Audio Mobile",
+    "address": "Sabal St., Valencia, Ormoc City",
+    "phone": null,
+    "website": "edullantes.com",
+    "image": "https://graph.facebook.com/370095229817298/picture/?type=large",
+    "membership_level": 1,
+    "info": "edullantesp@gmail.com"
+    },
+    {
+    "name": "Fe Deliz Travel and Tours",
+    "address": "Ormoc City",
+    "phone": "555-9101",
+    "website": "deliztravel.com",
+    "image": "https://graph.facebook.com/462727833909114/picture/?type=large",
+    "membership_level": 3,
+    "info": "fe_deliz@gmail.com"
+    },
+    {
+    "name": "Metrobank Ormoc Branch",
+    "address": "Real Street, Corner Lopez Jaena Street Ormoc City",
+    "phone": "777-1234",
+    "website": "metrobank.com",
+    "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQqXd2x1-r7c3BNg7HxuRKt0rz2Di432ETyiw&s",
+    "membership_level": 3,
+    "info": "metrobankormoc@gmail.com"
+    }
+
+]

@@ -1,0 +1,292 @@
+:root {
+
+    /* fonts */
+    --font1: "Roboto", serif;
+    --fontWeight1: 500;
+    --fontWeight2: 200;
+    --fontWeight3: 300;
+    --fontsStyle1: normal;
+
+    /* color */
+    --color1: rgb(73, 73, 73);
+}
+
+
+main {
+    margin: 0 80px;
+}
+/* ----------------------------- burger button */
+#burger-button {
+    color: black;
+    background: var(--color1);
+    border: 0;
+    cursor: pointer;
+    font-size: 45px;
+}
+
+#burger-button {
+    display: none;
+}
+
+/*-------------------------------   Header */
+header {
+    background: var(--color1);
+    display: flex;
+    justify-content: space-between;
+}
+
+.website-name, .city, .menu-item a{
+    color: rgb(255, 255, 255);
+}
+
+.website-name {
+    font: var(--fontsStyle1) var(--fontWeight3)20px var(--font1);
+}
+
+.city {
+    font: var(--fontsStyle1) var(--fontWeight1)50px var(--font1);
+}
+
+.menu-item {
+    font-size: xx-large;
+    font: var(--fontsStyle1) var(--fontWeight2)30px var(--font1);
+}
+
+.logo {
+    display: flex;
+}
+
+.logo img {
+    height: 150px;
+    padding: 10px;
+}
+
+.menu-container {
+    margin-right: 100px;
+    display: flex;
+}
+
+.menu-container ul{
+    display: flex;
+
+}
+
+.menu-container a{
+    text-decoration: none;
+}
+
+.menu-item {
+    list-style-type: none;
+    margin: 10px;
+    
+}
+
+/* --------------------------------- Hero section */
+
+.hero-section {
+    position: relative;
+    display: inline-block;
+}
+
+.hero-image {
+    max-width: 100%;
+}
+
+.keynote-tickets {
+    background: rgba(211, 211, 211, 0.554);
+    position: absolute;
+    right: 3%;
+    bottom: 10%;
+    padding: 10px;
+    border-radius: 10px;
+    max-width: 90%;
+}
+
+
+/* ------------------------------- Home Section */
+
+.section-title {
+    font: var(--fontsStyle1) var(--fontWeight1)40px var(--font1);
+}
+
+.home-status {
+    gap: 10px;
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr;
+}
+
+.events {
+    grid-column: 1/2;
+}
+
+.current-weather {
+    grid-column: 2/3;
+}
+
+.weather-forecast {
+    grid-column: 3.4;
+}
+
+.home-status h3 {
+    color: white;
+    background-color: rgb(77, 77, 77);
+    margin-top: 0;
+}
+
+.home-status div {
+    background: rgb(199, 199, 199);
+    height: 200px;
+    margin: 10px;
+}
+
+.events-h2 {
+    font: var(--fontsStyle1) var(--fontWeight2)30px var(--font1);
+}
+
+.current-weather-h2 {
+    font: var(--fontsStyle1) var(--fontWeight2)30px var(--font1);
+}
+
+.weather-forecast-h2 {
+    font: var(--fontsStyle1) var(--fontWeight2)30px var(--font1);
+}
+
+/* ----------------- member cards section */
+
+
+.card-flex{
+    display: flex;
+}
+
+.member-card{
+    width: 400px;
+    background: rgb(205, 205, 205);
+    margin: 10px;
+    padding: 10px;
+}
+
+.member-info {
+    padding-left: 10px;
+}
+
+.member-info span{
+    font-weight: bold;
+}
+
+#members-list.grid-view{
+    display: grid;
+    gap: 10px;
+    grid-template-columns: repeat(auto-fit, minmax(410px, 1fr));
+}
+
+.member-image img {
+    width: 150px;
+}
+
+.member-card .member-name {
+    font: var(--fontsStyle1) var(--fontWeight3)20px var(--font1);
+}
+
+.grid-button-name, .list-button-name {
+    font-family: var(--font1);
+    font-size: 12px;
+}
+
+
+
+/* ------------------- grid and toggle list */
+.toggle-button {
+    display: flex;
+    justify-content: center;
+    
+}
+
+.toggle-button button {
+    border: 0;
+    margin: 0 20px;
+}
+
+.toggle-button ion-icon {
+    font-size: 40px;
+    cursor: pointer;
+}
+
+.toggle-button ion-icon:hover {
+    border: 2px solid black;
+    border-radius: 8px;
+    
+}
+
+#members-list.list-view img{
+    display: none;
+}
+
+#members-list.list-view .member-card{
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+}
+
+#members-list.list-view .member-name {
+    grid-column: 1/2;
+}
+
+#members-list.list-view .member-info {
+    grid-column: 2/3;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+#members-list.list-view .member-info p{
+   padding: 0 10px;
+   width: 100%;
+}
+
+
+#members-list.list-view .member-info {
+    display: flex;
+    padding-top: 5px;
+
+}
+
+#members-list.list-view .separator {
+    display: none;
+}
+
+#members-list.list-view .card-flex {
+    margin: 0;
+}
+
+/* ---------------- footer */
+
+footer {
+    display: flex;
+    justify-content: space-around;
+    background: rgb(33, 33, 33);
+    color: white;
+    font: var(--fontsStyle1) var(--fontWeight3)16px var(--font1);
+}
+
+.footer-info-1 p{
+    padding: 0;
+    margin: 5px 10px;
+}
+
+.footer-info-2 p{
+    padding: 0;
+    margin: 5px 10px;
+}
+
+.footer-title{
+    font-weight: bold;
+}
+
+.social-media ion-icon{
+    font-size: 85px;
+    color: rgb(130, 130, 130);
+}
+
+
+
+

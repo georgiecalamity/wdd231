@@ -1,0 +1,127 @@
+@media (max-width: 321px) {
+    footer {
+        font: var(--fontsStyle1) var(--fontWeight3)14px var(--font1);
+        display: block;
+    }
+
+    .social-media ion-icon{
+        font-size: 50px;
+        color: rgb(130, 130, 130);
+    }
+
+    .social-media {
+        display: flex;
+        justify-content: space-evenly;
+    }
+
+    #members-list.list-view .member-card{
+        width: 100%;
+        display: block;
+    }
+
+    #members-list.list-view .member-name{
+        text-align: center;
+    }
+
+    #members-list.grid-view .member-image img{
+        width: 60px;
+    }
+
+}
+
+@media (max-width: 600px) {
+    footer {
+        font: var(--fontsStyle1) var(--fontWeight3)14px var(--font1);
+        display: block;
+    }
+
+    .social-media ion-icon{
+        font-size: 50px;
+        color: rgb(130, 130, 130);
+    }
+
+    .social-media {
+        display: flex;
+        justify-content: space-evenly;
+    }
+
+    #members-list .member-card {
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 900px) {
+    .home-status {
+        display: block;
+    }
+
+    main {
+        margin: 0;
+    }
+
+    .member-image img {
+        width: 80px;
+    }
+
+    .member-info p{
+        margin: 0;
+        padding-top: 0;
+        padding-bottom: 0;
+    }
+
+    .member-card .member-name {
+        font: var(--fontsStyle1) var(--fontWeight3)15px var(--font1);
+    }
+
+    footer {
+        font: var(--fontsStyle1) var(--fontWeight3)14px var(--font1);
+    }
+
+    .social-media ion-icon{
+        font-size: 50px;
+        color: rgb(130, 130, 130);
+    }
+
+    .social-media {
+        display: flex;
+        justify-content: space-evenly;
+    }
+
+    .logo img {
+        height: 100px;
+        padding: 5px;
+    }
+
+    .city {
+        margin: 0;
+        font-size: 35px;
+    }
+
+    .website-name {
+        margin: 0;
+        font-size: 15px;
+    }
+    
+    #burger-button{
+        display: block;
+        margin-left: auto;
+        margin-right: 10px;
+    }
+
+    .menu-container {
+        width: 100%;
+    }
+    .menu-container{
+        display: none;
+        
+    }
+
+    .menu-container.open{
+        display: block;
+        background: rgb(50, 50, 50);
+    }
+
+    header {
+        display: block;
+    }
+}

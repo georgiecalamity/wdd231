@@ -198,7 +198,11 @@ header {
 .toggle-button {
     display: flex;
     justify-content: center;
-    
+}
+
+.toggle-button .grid-button,  .toggle-button .list-button{
+    display: flex;
+    flex-direction: column;
 }
 
 .toggle-button button {

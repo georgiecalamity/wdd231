@@ -57,7 +57,7 @@ function displayResults(data) {
     currentTemp.innerHTML = `<p>${temp}&deg;C</p>`;
     weatherIcon.setAttribute('src', iconSrc);
     weatherIcon.setAttribute('alt', desc);
-    description.innerHTML = `<p>desc</p>`;
+    description.innerHTML = `<p>${desc}</p>`;
 }
 
 // weather forecast

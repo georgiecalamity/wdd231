@@ -17,7 +17,7 @@ main {
 }
 /* ----------------------------- burger button */
 #burger-button {
-    color: black;
+    color: rgb(255, 255, 255);
     background: var(--color1);
     border: 0;
     cursor: pointer;
@@ -112,7 +112,7 @@ header {
 .home-status {
     gap: 10px;
     display: grid;
-    grid-template-columns: 2fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 2fr;
 }
 
 .events {

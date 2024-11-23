@@ -1,0 +1,200 @@
+:root {
+
+    /* fonts */
+    --font1: "Roboto", serif;
+    --fontWeight1: 500;
+    --fontWeight2: 200;
+    --fontWeight3: 300;
+    --fontsStyle1: normal;
+
+    /* color */
+    --color1: rgb(73, 73, 73);
+}
+
+body {
+    background: rgb(179, 179, 179);
+}
+
+.hero-content {
+    position: absolute;
+    bottom: 50%;
+    left: 10%;
+    
+    margin: 0;
+    padding: 0;
+    max-width: 80%;
+}
+
+.landing-page-h1{
+    margin: 0;
+    font-family: var(--font1);
+    color: white;
+    font-size: 50px;
+    background-color: rgba(38, 38, 38, 0.864);
+    border-radius: 10px;
+    font-weight: var(--fontWeight2);
+    text-align: center;
+}
+
+.landing-page-button {
+    background: linear-gradient(blue,rgb(0, 0, 120));
+    display: block;
+    color: white;
+    border: 0;
+    font-family: var(--font1);
+    font-weight: var(--fontWeight1);
+    font-size: 50px;
+    padding: 10px;
+    border-radius: 20px;
+    cursor: pointer;
+    margin: 0 auto;
+    margin-top: 10px;
+}
+
+figure {
+    margin: 0;
+}
+
+.landing-page-button:hover {
+    background: blue;
+}
+
+/* current weather */
+
+.current-weather p {
+    margin: 0;
+    text-align: center;
+    font-family: var(--font1);
+}
+
+.current-weather-h2 {
+    margin: 0;
+}
+
+.description {
+    text-align: center;
+    font-family: var(--font1);
+}
+
+.weather-icon {
+    display: block;
+    margin: 0 auto;
+}
+
+/* weather forecast div */
+
+.weather-forecast .forecast-container {
+    display: flex;
+    margin: 0;
+    height: 80%;
+    justify-content: space-around;
+}
+
+.weather-forecast-h2 {
+    margin: 0;
+}
+
+.forecast-container .forecast-day {
+    margin: 3px;
+    height: 95%;
+    padding: 3px;
+    background: linear-gradient(to bottom right, rgb(170, 170, 170),rgb(89, 89, 89));
+    border-radius: 10px;
+}
+
+.forecast-day p {
+    font-family: var(--font1);
+
+}
+
+/* spotlight */
+.spotlight-container .spotlights{
+    display: flex;
+    justify-content: space-evenly; 
+}
+
+.spotlight {
+    background: linear-gradient(to bottom right, rgb(73, 73, 73),rgb(28, 28, 28));
+    padding: 5px;
+    margin: 10px;
+    border-radius: 10px;
+
+}
+
+.spotlight-container h2 {
+    font-family: var(--font1);
+}
+
+.spotlight h3 {
+    font-family: var(--font1);
+    color: rgb(227, 227, 227);
+}
+
+.spotlight img {
+    width: 100px;
+}
+
+.spotlight p, .spotlight a {
+    font-family: var(--font1);
+    color: rgb(255, 255, 255);
+    font-weight: var(--fontWeight3);
+
+}
+
+
+@media (max-width: 321px) {
+    main .hero-section .hero-content .landing-page-h1 {
+        font-size: 16px;  
+    }
+
+
+}
+
+@media (max-width: 510px) {
+    .hero-section .hero-content .landing-page-h1 {
+        font-size: 25px;  
+    }
+
+    .landing-page-button {
+        font-size: 20px;
+    }
+}
+
+
+@media (max-width: 600px) {
+    .hero-content .landing-page-h1{
+        font-size: 30px;
+    }
+
+    .hero-section .hero-content {
+        bottom: 20%;
+    }
+
+    .hero-image img{
+        height: 200px;
+    }
+
+}
+
+@media (max-width: 900px) {
+    .hero-content {
+        bottom: 15%;
+        left: 15%;
+    }
+
+    .landing-page-h1{
+        font-size: 40px;
+    }
+
+    .spotlight-container .spotlights{
+        flex-direction: column;
+    }
+
+}
+
+@media (max-width: 1200px) {
+    
+    .hero-content {
+        bottom: 13%;
+    }
+}

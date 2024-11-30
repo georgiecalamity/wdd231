@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="images/surprised-pikachu.webp">
+    <title>Brylle Dann Tabon | Chamber of Commerce</title>
+    <meta name="author" content="Brylle Dann Tabon">
+    <meta name="description" content="The Ormoc City Chamber of Commerce website serves as a hub for fostering local business growth, providing resources, networking opportunities, and promoting economic development within the city.">
+
+    <!-- styles links -->
+    <link rel="stylesheet" href="styles/chamber.css">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/small-chamber.css">
+    <link rel="stylesheet" href="styles/landing-page.css">
+    <link rel="stylesheet" href="styles/join.css">
+
+    <!-- social media meta -->
+    <meta property="og:title" content="Brylle Dann Tabon | Chamber of Commerce">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://raw.githubusercontent.com/georgiecalamity/wdd231/refs/heads/main/chamber/images/merida-townhall.webp">
+    <meta property="og:url" content="https://georgiecalamity.github.io/wdd231/chamber/directory.html">
+
+    <!-- ionicon -->
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+
+    <!-- font link -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;400;500;600&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="images/(1)commerce_logo.webp" alt="networking logo">
+            <div class="text-container">
+                <h1 class="city">Ormoc</h1>
+                <p class="website-name">Chamber of Commerce</p>
+            </div>
+            <button id="burger-button">&#9776;</button>
+        </div>
+        
+        <div>
+            <nav>
+                <ul class="menu-container">
+                    <li class="menu-item"><a href="#">Home</a></li>
+                    <li class="menu-item"><a href="#">Directory</a></li>
+                    <li class="menu-item"><a href="#">Join</a></li>
+                    <li class="menu-item"><a href="#">Discover</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <form action="thankyou.html" method="get">
+            <h2 class="form-header">Membership Application Form</h2>
+            <label for="fname">First name:</label><br>
+            <input type="text" 
+                    id="fname" 
+                    name="fname" 
+                    autocomplete="given-name" 
+                    title="Enter first name" 
+                    placeholder="John" 
+                    required><br><br>
+
+            <label for="lname">Last name:</label><br>
+            <input type="text" 
+                    id="lname" 
+                    name="lname" 
+                    autocomplete="family-name" 
+                    title="Enter last name" 
+                    placeholder="Doe" 
+                    required><br><br>
+
+            <label for="organization-title">Organizational Title:</label><br>
+            <input type="text" 
+                    id="organization-title" 
+                    name="organization-title" 
+                    title="Enter organizational title" 
+                    autocomplete="organization-title" 
+                    pattern="[A-Za-z\- ]{7,}"><br><br>
+
+            <label for="email">Email Address: </label><br>
+            <input type="email" 
+                    name="email" 
+                    id="email"
+                    title="Enter your email here"
+                    autocomplete="email"
+                    placeholder="example@gmail.com"><br><br>
+
+            <label for="phone-number">Mobile Phone Number:</label><br>
+            <input type="tel" 
+                    name="phone-number" 
+                    id="phone-number"
+                    title="enter phone number" 
+                    required 
+                    autocomplete="tel"><br><br>
+
+            <label for="orgName">Business/Organization Name: </label><br>
+            <input type="text" 
+                    id="orgName" 
+                    name="organization-name" 
+                    title="Please enter the name of your organization." 
+                    autocomplete="organization" 
+                    required><br><br>
+
+            <label for="membership">Membership Level:</label><br>
+            <select name="membership-level" id="membership">
+                <option value="" disabled selected>Select a Membership level</option>
+                <option value="np">NP Membership(non-profit, No Fee)</option>
+                <option value="bronze">Bronze Membership</option>
+                <option value="silver">Silver Membership</option>
+                <option value="gold">Gold Membership</option>
+            </select><br><br>
+
+            <label for="description">Business/Organization's Description</label><br>
+            <textarea name="description"
+                     id="description"
+                     title="Provide a brief description of your business or organization."
+                     rows="5"></textarea><br><br>
+            
+            <input type="hidden"
+                    name="timestamp"
+                    id="timestamp"><br><br>
+            <input type="submit" value="Submit Your Application">
+        </form>
+
+        <hr class="separator">
+
+
+        <!-- modals -->
+        <div id="membership-card-list"></div>
+
+        <dialog id="level-details"></dialog>
+
+    </main>
+
+
+
+    <!-- footer -->
+    <footer>
+        <div class="footer-info-1">
+            <p class="footer-title">Ormoc Chamber of Commerce</p>
+            <p>Ormoc City Leyte</p>
+            <p>Philippines</p>
+            <p>info@ormoc.org</p>
+            <p>(111) 222-3333</p>
+        </div>
+
+        <div class="social-media">
+            <ion-icon name="logo-youtube"></ion-icon>
+            <ion-icon name="logo-twitter"></ion-icon>
+            <ion-icon name="logo-linkedin"></ion-icon>
+        </div>
+
+        <div class="footer-info-2">
+            <p>Brylle Dann Tabon</p>
+            <p>WDD 231 Class Project</p>
+            <p id="copyrightYear"></p>
+            <p id="lastModified"></p>
+        </div>
+    </footer>
+
+    <script src="scripts/join.js" defer></script>
+
+</body>
+</html>

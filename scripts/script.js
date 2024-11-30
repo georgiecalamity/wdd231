@@ -110,7 +110,7 @@ const totalCreditsDisplay = document.getElementById('total-credits');
 
 function renderCourses(filteredCourses) {
     const courseList = document.getElementById('course-list');
-    courseList.innerHTML = ''; // Clear the existing list
+    courseList.innerHTML = '';
 
     filteredCourses.forEach(course => {
         const courseContainer = document.createElement('div');
@@ -120,12 +120,12 @@ function renderCourses(filteredCourses) {
             courseContainer.classList.add('completed');
         }
         
-        // ---------------------------------------------------- display
         courseContainer.innerHTML = `<h4>${course.subject} ${course.number}</h4>`;
         courseList.appendChild(courseContainer);
+
+        courseContainer.addEventListener('click', () => displayCourseDetails(course));   
     });
 
-    // Calculate total credits using reduce
     const totalCredits = filteredCourses.reduce((sum, course) => sum + course.credits, 0);
     totalCreditsDisplay.textContent = `Total Credits: ${totalCredits}`;
 }
@@ -144,3 +144,38 @@ function filterCourses(category) {
 
 // Initial rendering of all courses
 renderCourses(courses);
+
+
+
+// modal
+const courseDetails = document.getElementById('course-details');
+const dialogElement = document.querySelector('dialog');
+
+function displayCourseDetails(course) {
+    courseDetails.innerHTML = '';
+    courseDetails.innerHTML = `
+        <div id="modal-container">
+            <button id="close-modal" class="close-button">✖</button>
+            <h2>${course.subject} ${course.number}</h2>
+            <h3 id='modal-title'>${course.title}</h3>
+            <p><strong>Credits</strong>: ${course.credits}</p>
+            <p>${course.description}</p>
+            <p><strong>Certificate</strong>: ${course.certificate}</p>
+            <p><strong>Technology</strong>: ${course.technology.join(', ')}</p>
+        </div>
+    `;
+    courseDetails.showModal();
+
+    const closeModal = document.getElementById('close-modal');
+
+    closeModal.addEventListener("click", () => {
+        courseDetails.close();
+    }); 
+
+    dialogElement.addEventListener('click', (event) => {
+        if (event.target == dialogElement) {
+            courseDetails.close();
+        }
+    });
+}
+

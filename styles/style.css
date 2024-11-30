@@ -103,12 +103,38 @@ header {
     border-radius: 5px;
     text-align: center;
     font-family: var(--first-font);
+    cursor: pointer;
+    
+    
+}
+
+.course-item:hover, .course-item.completed:hover {
+
+    background: linear-gradient(rgb(121, 255, 121), rgb(66, 137, 59));
+    border: 1px solid #000000;
+    animation-name: shakeresize;
+    animation-duration: .5s;
+    
 }
 
 .course-item.completed {
     background: #d0ffd0;
     border: 1px solid #5cb85c;
 }
+
+@keyframes shakeresize {
+    50%{
+        scale: 1.2;
+    }
+    20%, 60%{
+        transform: rotate(2deg)
+    }
+    40%, 80%{
+        transform: rotate(-2deg)
+    }
+    
+}
+
 /* ------------ HOME SECTION ----------------- */
 
 .home-country-section {
@@ -211,3 +237,44 @@ footer img {
 }
 
 
+/* ------------------- MODAL ------------------- */
+
+.course-modal {
+    padding: 20px;
+    border: none;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    max-width: 500px;
+    width: 80%;
+}
+
+.close-button {
+    display: block;
+    background: #f44336;
+    color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 0 0 0 90%;
+}
+
+.close-button:hover {
+    background: #d32f2f;
+}
+
+#course-details::backdrop {
+    background: rgb(0, 0, 0);
+    opacity: .8;
+}
+
+#modal-title {
+
+    border-radius: 0;
+}
+
+@keyframes shake {
+    25% { transform: translateX(-5px); }
+    50% { transform: translateX(5px); }
+    75% { transform: translateX(-5px); }
+}

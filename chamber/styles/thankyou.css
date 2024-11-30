@@ -1,0 +1,19 @@
+:root {
+    /* fonts */
+    --font1: "Roboto", serif;
+    --fontWeight1: 500;
+    --fontWeight2: 200;
+    --fontWeight3: 300;
+    --fontsStyle1: normal;
+}
+
+h1 {
+    font-family: var(--font1);
+}
+
+#results {
+    font-family: var(--font1);
+    border: solid 1px black;
+    padding: 20px;
+    background-color: rgb(233, 233, 233);
+}

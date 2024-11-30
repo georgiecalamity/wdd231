@@ -1,0 +1,21 @@
+{
+    "membershipLevels": [
+      {
+        "name": "NP Membership Level",
+        "description": "For non-profit organizations that seek collaboration and support without incurring any fees. This membership is designed to help charitable and non-commercial entities thrive in their missions."
+      },
+      {
+        "name": "Bronze Membership Level",
+        "description": "A cost-effective plan tailored for small businesses or startups seeking foundational support and opportunities to grow."
+      },
+      {
+        "name": "Silver Membership Level",
+        "description": "Perfect for growing businesses that require more exposure and advanced resources to scale operations and reach a wider audience."
+      },
+      {
+        "name": "Gold Membership Level",
+        "description": "An elite membership plan designed for established organizations aiming for maximum visibility and influence within the network."
+      }
+    ]    
+  }
+  

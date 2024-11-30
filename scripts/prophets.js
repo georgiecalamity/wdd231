@@ -8,27 +8,27 @@ async function getProphetData() {
     displayProphets(data.prophets)
 }
 
-const displayProphets = (prophets) => {
+function displayProphets(prophets) {
     const container = document.getElementById('cards');
 
 
-    prophets.forEach((prophets) => {
+    prophets.forEach((prophet) => {
         const card = document.createElement('section');
         card.classList.add('prophet-card');
 
         const name = document.createElement('h2');
-        name.textContent = `${prophets.name} ${prophets.lastname}`;
+        name.textContent = `${prophet.name} ${prophet.lastname}`;
 
         const birthdate = document.createElement('p');
-        birthdate.textContent = `Date of Birth: ${prophets.birthdate}`;
+        birthdate.textContent = `Date of Birth: ${prophet.birthdate}`;
 
         const birthplace = document.createElement('p');
-        birthplace.textContent = `Place of Birth: ${prophets.birthplace}`;
+        birthplace.textContent = `Place of Birth: ${prophet.birthplace}`;
 
         const image = document.createElement('img');
         image.classList.add('prophet-image');
-        image.src = prophets.imageurl;
-        image.alt = `Portrait of Prophet ${prophets.name} ${prophets.lastname}`;
+        image.src = prophet.imageurl;
+        image.alt = `Portrait of Prophet ${prophet.name} ${prophet.lastname}`;
         image.setAttribute('loading', 'lazy');
         image.setAttribute('height', '300');
       

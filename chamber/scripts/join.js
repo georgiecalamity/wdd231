@@ -81,6 +81,10 @@ function displayModalDetails(level) {
             <button id="close-modal" class="close-button">✖</button>
             <h2>${level.name}</h2>
             <p>${level.description}</p>
+            <p><strong>Benefits</strong></p>
+            <ul>
+                ${level.benefits.map(benefit =>`<li>${benefit}</li>`).join('')}
+            </ul>
         </div>
     `;
     levelDetails.showModal();

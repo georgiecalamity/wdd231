@@ -2,6 +2,18 @@ const currentUrl = window.location.href;
 const everything = currentUrl.split('?');
 let formData = everything[1].split('&');
 
+const currentDate = new Date();
+const options = {
+    year: 'numeric',
+    month: 'long',
+    day: 'numeric',
+    hour: '2-digit',
+    minute: '2-digit',
+    hour12: true
+};
+const currentDateTime = currentDate.toLocaleString(undefined, options);
+console.log(currentDateTime);
+
 
 function show(cup) {
     console.log(cup)
@@ -22,4 +34,6 @@ showInfo.innerHTML = `
     <p>Organization Name: ${show('organization-name')}</p>
     <p>Membeship Level: ${show('membership-level')}</p>
     <p>Description: ${show('description')}</p> 
+    <p>Date Submitted: ${currentDateTime}</p> 
+
 `;

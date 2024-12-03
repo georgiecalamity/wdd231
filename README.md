@@ -49,7 +49,7 @@ I'm excited about learning new technologies, building innovative projects, and c
 ## 🤝 Let's Connect  
 
 - **LinkedIn**: [Brylle Dann Tabon](https://www.linkedin.com/in/brylle-dann-tabon-022158256)  
-- **Email**: [brylledannt@gmal.com](mailto:brylledannt@gmal.com)  
+- **Email**: [brylledannt@gmal.com](mailto:brylledannt@gmail.com)  
 
 <br>  
 

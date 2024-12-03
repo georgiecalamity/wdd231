@@ -1,40 +1,56 @@
+# Welcome to My GitHub Profile 👋  
 
-Welcome to My GitHub Profile 👋
-Hi there! I'm Brylle Dann, a passionate student pursuing a degree in Software Development. I'm excited about learning new technologies, building innovative projects, and collaborating with others in the tech community.
+Hi there! I'm **Brylle Dann**, a passionate student pursuing a degree in Software Development.  
+I'm excited about learning new technologies, building innovative projects, and collaborating with others in the tech community.  
 
-👨‍💻 About Me
-🎓 Education: Currently studying Software Development at Brigham Young University Idaho.
-💡 Interests: Programming, databases, web development, and creating digital projects.
-🎯 Goals: Master the art of writing clean code and designing robust systems.
-🌱 Currently Learning:
-Programming fundamentals
-Database management
-Version control systems like Git
-🚀 Skills
-Programming Languages:
+<br>  
 
-Javascript
-C#
-Tools and Technologies:
+## 👨‍💻 About Me  
 
-Git
-GitHub
-VSCode
-🛠️ Projects
-Here are a few projects I've worked on as part of my learning journey:
+🎓 **Education**: Currently studying Software Development at **Brigham Young University Idaho**.  
+💡 **Interests**: Programming, databases, web development, and creating digital projects.  
+🎯 **Goals**: Master the art of writing clean code and designing robust systems.  
+🌱 **Currently Learning**:  
+- Programming fundamentals  
+- Database management  
+- Version control systems like Git  
 
-Chamber of Commerce Website: 
+<br>  
 
-📖 Description: "A dynamic Chamber of Commerce website designed to connect local businesses, foster networking, and promote community growth. Built with [technologies you used], this project demonstrates a focus on user-friendly design and robust functionality to support economic development."
-🔗 https://georgiecalamity.github.io/wdd231/chamber/index.html
+## 🚀 Skills  
 
-PortFolio Website:
+### **Programming Languages**:  
+- JavaScript  
+- C#  
 
-📖 Description: Containes information about me and the projects I made while im learning
-🔗 https://georgiecalamity.github.io/wdd131/project/mainPortfolio/BDTPortfolio/index.html
-🤝 Let's Connect
-LinkedIn: www.linkedin.com/in/brylle-dann-tabon-022158256
-Email: brylledannt@gmal.com
+### **Tools and Technologies**:  
+- Git  
+- GitHub  
+- VS Code  
 
-Feel free to explore my repositories, and don't hesitate to reach out if you'd like to collaborate or just chat about tech! 😊
+<br>  
 
+## 🛠️ Projects  
+
+### **Chamber of Commerce Website**:  
+📖 **Description**:  
+"A dynamic Chamber of Commerce website designed to connect local businesses, foster networking, and promote community growth. Built with [technologies you used], this project demonstrates a focus on user-friendly design and robust functionality to support economic development."  
+🔗 [Visit the Chamber Website](https://georgiecalamity.github.io/wdd231/chamber/index.html)  
+
+<br>  
+
+### **Portfolio Website**:  
+📖 **Description**:  
+"Contains information about me and the projects I made while learning."  
+🔗 [Visit My Portfolio](https://georgiecalamity.github.io/wdd131/project/mainPortfolio/BDTPortfolio/index.html)  
+
+<br>  
+
+## 🤝 Let's Connect  
+
+- **LinkedIn**: [Brylle Dann Tabon](https://www.linkedin.com/in/brylle-dann-tabon-022158256)  
+- **Email**: [brylledannt@gmal.com](mailto:brylledannt@gmal.com)  
+
+<br>  
+
+Feel free to explore my repositories, and don't hesitate to reach out if you'd like to collaborate or just chat about tech! 😊  

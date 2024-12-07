@@ -11,9 +11,6 @@
     --color1: rgb(73, 73, 73);
 }
 
-.menu-item.active a{
-    color: yellow;
-}
 
 main {
     display: flex;

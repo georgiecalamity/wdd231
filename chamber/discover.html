@@ -3,11 +3,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="icon" href="images/surprised-pikachu.webp">
+    <title>Brylle Dann Tabon | Chamber of Commerce</title>
+    <meta name="author" content="Brylle Dann Tabon">
+    <meta name="description" content="The Ormoc City Chamber of Commerce website serves as a hub for fostering local business growth, providing resources, networking opportunities, and promoting economic development within the city.">
+
     <!-- styles links -->
     <link rel="stylesheet" href="styles/chamber.css">
     <link rel="stylesheet" href="styles/normalize.css">
     <link rel="stylesheet" href="styles/small-chamber.css">
+    <link rel="stylesheet" href="styles/discover.css">
 
     <!-- social media meta -->
     <meta property="og:title" content="Brylle Dann Tabon | Chamber of Commerce">
@@ -42,39 +47,57 @@
                     <li class="menu-item"><a href="#">Home</a></li>
                     <li class="menu-item"><a href="#">Directory</a></li>
                     <li class="menu-item"><a href="#">Join</a></li>
-                    <li class="menu-item"><a href="#">Discover</a></li>
+                    <li class="menu-item  active"><a href="#">Discover</a></li>
                 </ul>
             </nav>
         </div>
     </header>
 
     <main>
-        <div>
-            <h2>Heading</h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel, necessitatibus doloremque unde asperiores voluptatibus, 
-                culpa temporibus aliquam consectetur illo corrupti, aut voluptates nostrum minima! Qui minus quasi recusandae illum maxime.</p>
-            <h2>Heading</h2>
-            <img src="" alt="">
-            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Autem veritatis ex sed reiciendis quod, voluptatum, eum sequi corporis
-                 necessitatibus praesentium molestias nulla, sunt voluptates consequatur in aut non modi enim!</p>
-            <div>
-
+        <div class="grid-container">
+            <div class="sidebar-info-grid">
+                <div class="demographics">
+                    <h2>Ormoc City - Demographics</h2>
+                    <p>Ormoc, officially the City of Ormoc, is a 1st class independent component city in the Eastern Visayas region of the Philippines.
+                         According to the 2020 census, it has a population of 230,998 inhabitants, making it the second most-populous city in the province
+                         of Leyte after the provincial capital of Tacloban. </p>
+                </div>
+                <div class="households">
+                    <h2>Households</h2>
+                    <img src="images/sidebar-image.png" alt="">
+                    <p>The household population of Ormoc in the 2015 Census was 214,464 broken down into 50,341 households or an average of 4.26 members per household.</p>
+                </div>
+                <div class="calendar">
+                    <h2>Calendar</h2>
+                    <div id="calendar"></div>
+                </div>
+            </div>
+            <div class="image-container-grid">
+            
+                <figure>
+                    <img src="images/ormoc-1.webp" alt="ormoc city image 1" loading="lazy">
+                    <figcaption>Ormoc City Plaza</figcaption>
+                    <img src="images/ormoc-2.webp" alt="ormoc city image 2" loading="lazy">
+                    <figcaption>Ormoc City Night Market</figcaption>
+                    <img src="images/ormoc-3.webp" alt="ormoc city image 3" loading="lazy">
+                    <figcaption>Robinson's Mall</figcaption>
+                    <img src="images/ormoc-4.jpg" alt="ormoc city image 4" loading="lazy">
+                    <figcaption>Ormoc City Drone Shot</figcaption>
+                    <img src="images/ormoc-5.jpg" alt="ormoc city image 5" loading="lazy">
+                    <figcaption>Hotel Reception</figcaption>
+                    <img src="images/ormoc-6.webp" alt="ormoc city image 6" loading="lazy">
+                    <figcaption>Ormoc City Hotel</figcaption>
+                </figure>
             </div>
         </div>
-        <div>
-            
-            <img src="" alt="">
-           
-            <img src="" alt="">
 
-            <img src="" alt="">
-
-            <img src="" alt="">
-
-            <img src="" alt="">
-
-            <img src="" alt="">
-        </div>
+         <!-- Modal Structure -->
+        <dialog id="visitModal">
+            <div class="modal-content">
+                <span class="close-button">✖</span>
+                <p id="visitMessage"></p>
+            </div>
+        </dialog>
 
     </main>
 
@@ -101,7 +124,7 @@
         </div>
     </footer>
 
-    <script src="scripts/chamber.js" defer></script>
+    <script src="scripts/discover.js" defer></script>
     
 </body>
 </html>

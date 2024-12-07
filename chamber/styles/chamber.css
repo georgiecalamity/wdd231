@@ -81,6 +81,15 @@ header {
     
 }
 
+.menu-item.active a{
+    color: yellow;
+}
+
+.menu-item a:hover {
+    color: rgb(255, 255, 124);
+}
+
+
 /* --------------------------------- Hero section */
 
 .hero-section {

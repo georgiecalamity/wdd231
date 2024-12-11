@@ -79,14 +79,6 @@ function generateCalendar(year, month) {
 const now = new Date();
 generateCalendar(now.getFullYear(), now.getMonth());
 
-
-
-
-
-
-
-
-
 // Modal
 document.addEventListener('DOMContentLoaded', function() {
     const dialog = document.getElementById('visitModal');

@@ -42,9 +42,3 @@ MovieFolio is a web application that allows users to explore and discover new mo
 - A modern web browser (e.g., Chrome, Firefox, Safari)
 - A code editor (e.g., Visual Studio Code)
 - An API key from TMDb (sign up at [TMDb](https://www.themoviedb.org/))
-
-### Installation
-
-1. Clone the repository:
-   ```sh
-   git clone https://github.com/yourusername/moviefolio.git

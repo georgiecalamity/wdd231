@@ -34,6 +34,7 @@ main {
 }
 
 .explore-button {
+    display: inline-block;
     background: rgb(0, 99, 0);
     color: rgb(254, 254, 254);
     padding: 10px;
@@ -41,10 +42,11 @@ main {
     border: none;
     border-radius: 10px;
     transition: transform 0.3s ease;
+    text-decoration: none;
 }
 
 .explore-button:hover {
-    transform: scale(1.1);
+    transform: scale(1.2);
     background: rgb(0, 149, 0);
 }
 

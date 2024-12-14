@@ -30,7 +30,7 @@ showInfo.innerHTML = `
     <p>Full Name: ${show('fname')} ${show('lname')}</p>
     <p>Email: ${show('email')}</p>
     <p>Phone Number ${show('phone-number')}</p>
-    <p>Organization Name: ${show('age')}</p> 
+    <p>Organization Name: ${show('age')}</p>
     <p>Date Submitted: ${currentDateTime}</p> 
 
 `;

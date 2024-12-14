@@ -1,11 +1,22 @@
 <!DOCTYPE html>
 <html lang="en">
 	<head>
-		<meta charset="UTF-8" />
-		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
-		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta name="author" content="Brylle Dann Tabon">
+		<meta name="description" content="A movie library website for exploring new shows">
+
+		<!-- social media meta -->
+		<!-- <meta property="og:title" content="Brylle Dann Tabon | Chamber of Commerce">
+		<meta property="og:type" content="website">
+		<meta property="og:image" content="https://raw.githubusercontent.com/georgiecalamity/wdd231/refs/heads/main/chamber/images/merida-townhall.webp">
+		<meta property="og:url" content="https://georgiecalamity.github.io/wdd231/chamber/directory.html"> -->
+
+		<!-- styles link -->
 		<link rel="stylesheet" href="styles/style.css">
 		<link rel="icon" href="images/movieIco.png">
+		<!-- <link rel="stylesheet" href="styles/homepage.css"> -->
 
 		<!-- ion icon link -->
 		<script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
@@ -21,22 +32,36 @@
 		<header>
 			<div class="logos">
 				<a href="#"><img class="logo" src="images/moviefolioLogo.png" alt="MovieFolio Logo"></a>
+		
+				<form id="form">
+					<ion-icon name="search-outline" class="search-icon"></ion-icon>
+					<input type="text" placeholder="Search for movie" id="search" class="search">
+				</form>
+				<button id="burger-button">&#9776;</button>
 			</div>
-			<form id="form">
-				<ion-icon name="search-outline" class="search-icon"></ion-icon>
-				<input type="text" placeholder="Search for movie" id="search" class="search">
-			</form>
+
+			
+			<div>
+				<nav>
+					<ul class="menu-container">
+						<li class="menu-item"><a href="">HOME</a></li>
+						<li class="menu-item  active"><a href="">MOVIES</a></li>
+						<li class="menu-item"><a href="">JOIN</a></li>
+						<li class="menu-item"><a href="">CONTACT US</a></li>
+					</ul>
+				</nav>
+			</div>
 		</header>
 
 		<div class="background-img-container">
-			<img src="images/hero-img.webp" alt="background-img" class="background-img">
+			<img src="images/hero-img.webp" alt="background-img" class="background-img" loading="lazy">
 			<div class="background-img-overlay"></div>
 			<button class="hero-button">WATCH</button>
 			<p class="hero-text">Welcome to MovieFolio, your ultimate destination
 				 for discovering the best in cinema! Whether you're a die-hard movie buff or just looking for something new to watch, we've got you covered.</p>
 		</div>
 
-
+		<h2 class="filter-header">FILTER</h2>
 		<div id="tags"></div>
 		<h2 class="header-1">NEW RELEASES</h2>
 		<div id="myNav" class="overlay">
@@ -46,24 +71,23 @@
 			<!-- Overlay content -->
 			<div class="overlay-content" id="overlay-content"></div>
 
-			<a href="javascript:void(0)" class="arrow left-arrow" id="left-arrow"><</a>
+			<a href="javascript:void(0)" class="arrow left-arrow" id="left-arrow"><ion-icon name="chevron-back-outline"></ion-icon></a>
 
-			<a href="javascript:void(0)" class="arrow right-arrow" id="right-arrow">></a>
+			<a href="javascript:void(0)" class="arrow right-arrow" id="right-arrow"><ion-icon name="chevron-forward-outline"></ion-icon></a>
 		</div>
-
 
 		<main id="main"></main>
 
-
 		<div class="pagination">
-			<div class="page" id="prev">< Prev</div>
+			<div class="page" id="prev"><ion-icon name="chevron-back-outline"></ion-icon> Prev</div>
 			<div class="current" id="current">1</div>
-			<div class="page" id="next">Next ></div>
+			<div class="page" id="next">Next <ion-icon name="chevron-forward-outline"></ion-icon></div>
 		</div>
 
 
 		<footer>
 			<div class="footer-info-1">
+				<a href="" class="attributions">Attributions</a>
 				<p class="footer-title">MovieFolio Class Project</p>
 				<p>Ormoc City Leyte</p>
 				<p>Brylle Dann Tabon</p>
@@ -71,8 +95,6 @@
 			</div>
 	
 			<div class="social-media">
-				<ion-icon name="logo-youtube"></ion-icon>
-				<ion-icon name="logo-twitter"></ion-icon>
 
 				<a href="https://www.linkedin.com/in/brylle-dann-tabon-022158256/">
 					<ion-icon name="logo-linkedin"></ion-icon>
@@ -90,6 +112,6 @@
 			</div>
 		</footer>
 
-		<script src="js/script.js"></script>
+		<script src="javascript/script.js"></script>
 	</body>
 </html>

@@ -7,7 +7,7 @@ html {
 }
 
 :root {
-	--primary-color: gray;
+	--primary-color: rgb(45, 45, 45);
 	--secondary-color: rgb(66, 66, 66);
 	--third-color: rgb(172, 18, 18);
 
@@ -34,6 +34,12 @@ body {
 	display: block;
 }
 
+.background-img img{
+	width: 100%;
+	height: auto;
+
+}
+
 .background-img-container {
 	position: relative;
   }
@@ -45,7 +51,6 @@ body {
 	width: 100%;
 	height: 100%;
 	background: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgb(0, 0, 0)); 
-	pointer-events: none;
 }
 
 .hero-text {
@@ -63,37 +68,56 @@ body {
 	padding: 10px;
 	border-radius: 10px;
 	border: none;
-	background: rgb(0, 195, 0);
+	background: rgb(0, 89, 0);
 	color: white;
 	cursor: pointer;
 	font-size: 15px;
+	font-weight: bold;
 }
 
 header {
 	padding: 0.5rem;
 	display: flex;
-	flex-wrap: wrap;
+	/* flex-wrap: wrap; */
 	align-items: center;
 	justify-content: space-between;
 	background: rgb(27, 27, 27);
 }
 
-header ul li {
+.menu-container {
+	display: flex;
+
+}
+
+.menu-container.open {
+    display: block;
+}
+
+.menu-item a {
 	font-size: 22px;
 	font-family:var(--font-2) ;
-	list-style: none;
 	border-radius: 5px;
-	background: linear-gradient(
-		-45deg,
-		var(--primary-color),
-		var(--secondary-color)
-	);
 	padding: 10px;
 	color: #fff;
 	text-decoration: none;
 	cursor: pointer;
 	transition: color 0.5s;
+	justify-content: space-around;
 }
+
+.menu-item.active a{
+    color: red;
+}
+
+.menu-item:hover a{
+    color: rgb(255, 74, 74);
+}
+
+.menu-container li  {
+	text-decoration: none;
+	list-style: none;
+}
+
 
 
 
@@ -131,12 +155,17 @@ header ul li {
 }
 
 /* ----------------------------------- headings */
-.header-1 {
-	color: white;
+.filter-header {
+	color: rgb(255, 255, 255);
 	margin: 15px;
 	font-size: 35px;
 }
 
+.header-1 {
+	color: rgb(109, 109, 109);
+	margin: 15px;
+	font-size: 35px;
+}
 
 main {
 	display: flex;
@@ -186,7 +215,7 @@ main {
 }
 
 .movie-info span.orange {
-	color: orange;
+	color: rgb(255, 182, 46);
 }
 
 .movie-info span.red {
@@ -212,19 +241,20 @@ main {
 }
 
 #tags {
+	max-width: 500px;
 	width: 80%;
 	display: flex;
 	flex-wrap: wrap;
-	justify-content: center;
+	/* justify-content: center; */
 	align-items: center;
-	margin: 10px auto;
+	margin-left: 10px;
 }
 
 .tag {
 	color: white;
 	padding: 10px 20px;
 	background-color: rgb(172, 18, 18);
-	border-radius: 50px;
+	border-radius: 5px;
 	margin: 5px;
 	display: inline-block;
 	cursor: pointer;
@@ -261,6 +291,8 @@ main {
 	border: none;
 	font-size: 30px;
 	font-weight: 600;
+	color: rgb(62, 62, 62);
+	background: transparent;
 }
 
 .know-more {
@@ -319,6 +351,9 @@ main {
 	top: 20px;
 	right: 45px;
 	font-size: 60px;
+	color: rgb(184, 0, 0);
+	background: rgb(255, 255, 255);
+	border-radius: 20px;
 }
 
 /* When the height of the screen is less than 450 pixels, change the font-size of the links and position the close button again, so they don't overlap */
@@ -373,21 +408,23 @@ main {
 	font-size: 20px;
 	font-weight: 600;
 	margin: 5px;
+	background: black;
 }
 
 .dots .dot.active {
 	border-color: var(--primary-color);
-	color: var(--third-color);
+	background: black;
+	color: rgb(255, 35, 35);
 }
 
-@keyframes animFw {
+/* @keyframes animFw {
   0% {
     width: 0;
   }
   100% {
     width: 100%;
   }
-}
+} */
 
 
 /* ---------------- footer */
@@ -419,6 +456,9 @@ footer {
     color: rgb(130, 130, 130);
 }
 
+.attributions {
+	color: rgb(232, 232, 232);
+}
 
 
 @media (max-width: 600px) {
@@ -435,12 +475,51 @@ footer {
         display: flex;
         justify-content: space-evenly;
     }
-
+/* 
 	.logo {
 		width: 200px;
-	}
+	} */
 
 	.hero-text, .hero-button {
 		display: none;
+	}
+}
+
+
+
+/* burger button */
+#burger-button {
+    color: rgb(255, 255, 255);
+    background: transparent;
+    border: 0;
+    cursor: pointer;
+    font-size: 45px;
+}
+
+#burger-button {
+    display: none;
+}
+
+@media (max-width: 900px) {
+    
+    #burger-button{
+        display: block;
+        margin-left: auto;
+        margin-right: 10px;
+    }
+
+    .menu-container {
+        width: 100%;
+    }
+    .menu-container{
+        display: none;
+        
+    }
+	header{
+		display: block;
+	}
+
+	.logos {
+		flex-wrap: wrap;
 	}
 }
